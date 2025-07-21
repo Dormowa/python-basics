@@ -33,7 +33,7 @@ while funds > 0:
         print(f"{choice} dispensed.")
         print(f"Remaining balance: ${funds:.2f}")
     else:
-        print(f"Brokey! Insufficient funds for {choice}.")
+        print(f"Insufficient funds for {choice}.")
         more = input("Do you want to add more money? (yes/no): ").lower()
         if more == "yes":
             extra = float(input("Enter amount to add: $"))
@@ -45,5 +45,5 @@ while funds > 0:
 
     again = input("Do you want to make another purchase? (yes/no): ").lower()
     if again != "yes":
-     print("Thank you for your purchase. Later, Booski!.")
+     print("Thank you for your purchase. Later!.")
      break
